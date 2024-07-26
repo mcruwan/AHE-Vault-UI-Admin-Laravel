@@ -136,189 +136,356 @@
                 <!--begin::Content container-->
                 <div id="kt_app_content_container" class="app-container container-xxl">
 
-                    <div class="row g-6 mb-6 g-xl-9 mb-xl-9">
-
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
+                    <div class="card card-flush">
+                        <!--begin::Card header-->
+                        <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                            <!--begin::Card title-->
+                            <div class="card-title">
+                                <!--begin::Search-->
+                                <div class="d-flex align-items-center position-relative my-1">
+                                    <i class="ki-outline ki-magnifier fs-3 position-absolute ms-4"></i>
+                                    <input type="text" data-kt-ecommerce-product-filter="search"
+                                        class="form-control form-control-solid w-250px ps-12" placeholder="Search User" />
                                 </div>
-                                <!--begin::Card body-->
+                                <!--end::Search-->
                             </div>
-                            <!--begin::Card-->
-                        </div>
-
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
+                            <!--end::Card title-->
+                            <!--begin::Card toolbar-->
+                            <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                <div class="w-100 mw-150px">
+                                    <!--begin::Select2-->
+                                    <select class="form-select form-select-solid" data-control="select2"
+                                        data-hide-search="true" data-placeholder="Status"
+                                        data-kt-ecommerce-product-filter="status">
+                                        <option></option>
+                                        <option value="all">All</option>
+                                        <option value="Active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                    </select>
+                                    <!--end::Select2-->
                                 </div>
-                                <!--begin::Card body-->
+                                <!--begin::Add User-->
+                                <a href="{{ url('add-user') }}" class="btn btn-primary">Add User</a>
+                                <!--end::Add User-->
                             </div>
-                            <!--begin::Card-->
+                            <!--end::Card toolbar-->
                         </div>
+                        <!--end::Card header-->
+                        <!--begin::Card body-->
+                        <div class="card-body pt-0">
+                            <!--begin::Table-->
+                            <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table">
+                                <thead>
+                                    <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+                                        <th class="w-10px pe-2">
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                <input class="form-check-input" type="checkbox" data-kt-check="true"
+                                                    data-kt-check-target="#kt_ecommerce_products_table .form-check-input"
+                                                    value="1" />
+                                            </div>
+                                        </th>
+                                        <th class="min-w-200px">Name</th>
+                                        <th class="text-end min-w-100px">Job Title</th>
+                                        <th class="text-end min-w-70px">Email Address</th>
+                                        <th class="text-end min-w-100px">Contact Number</th>
+                                        <th class="text-end min-w-100px">Department/Office</th>
+                                        <th class="text-end min-w-70px">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="fw-semibold text-gray-600">
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Thumbnail-->
+                                                <a href="{{ url('#') }}" class="symbol symbol-50px">
+                                                    <span class="symbol-label"
+                                                        style="background-image:url('/assets/media/avatars/300-20.jpg')"></span>
+                                                </a>
+                                                <!--end::Thumbnail-->
+                                                <div class="ms-5">
+                                                    <!--begin::Title-->
+                                                    <a href="{{ url('#') }}"
+                                                        class="text-gray-800 text-hover-primary fs-5 fw-bold"> Hansi
+                                                        Sooriyarathne</a>
+                                                    <!--end::Title-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="fw-bold">Designer</span>
+                                        </td>
+                                        <td class="text-end" data-order="14">
+                                            <span class="fw-bold ms-3">hansi@dyits.com.my</span>
+                                        </td>
+                                        <td class="text-end">0715935334</td>
+                                        <td class="text-end">IT</td>
+                                        <td class="text-end">
+                                            <a href="{{ url('#') }}"
+                                                class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                <i class="ki-outline ki-down fs-5 ms-1"></i></a>
+                                            <!--begin::Menu-->
+                                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                data-kt-menu="true">
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">View</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">Edit</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3"
+                                                        data-kt-ecommerce-product-filter="delete_row">Delete</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                            </div>
+                                            <!--end::Menu-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Thumbnail-->
+                                                <a href="{{ url('#') }}" class="symbol symbol-50px">
+                                                    <span class="symbol-label"
+                                                        style="background-image:url('/assets/media/avatars/300-20.jpg')"></span>
+                                                </a>
+                                                <!--end::Thumbnail-->
+                                                <div class="ms-5">
+                                                    <!--begin::Title-->
+                                                    <a href="{{ url('#') }}"
+                                                        class="text-gray-800 text-hover-primary fs-5 fw-bold"> Hansi
+                                                        Sooriyarathne</a>
+                                                    <!--end::Title-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="fw-bold">Designer</span>
+                                        </td>
+                                        <td class="text-end" data-order="14">
+                                            <span class="fw-bold ms-3">hansi@dyits.com.my</span>
+                                        </td>
+                                        <td class="text-end">0715935334</td>
+                                        <td class="text-end">IT</td>
+                                        <td class="text-end">
+                                            <a href="{{ url('#') }}"
+                                                class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                <i class="ki-outline ki-down fs-5 ms-1"></i></a>
+                                            <!--begin::Menu-->
+                                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                data-kt-menu="true">
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">View</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">Edit</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3"
+                                                        data-kt-ecommerce-product-filter="delete_row">Delete</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                            </div>
+                                            <!--end::Menu-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Thumbnail-->
+                                                <a href="{{ url('#') }}" class="symbol symbol-50px">
+                                                    <span class="symbol-label"
+                                                        style="background-image:url('/assets/media/avatars/300-20.jpg')"></span>
+                                                </a>
+                                                <!--end::Thumbnail-->
+                                                <div class="ms-5">
+                                                    <!--begin::Title-->
+                                                    <a href="{{ url('#') }}"
+                                                        class="text-gray-800 text-hover-primary fs-5 fw-bold"> Hansi
+                                                        Sooriyarathne</a>
+                                                    <!--end::Title-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="fw-bold">Designer</span>
+                                        </td>
+                                        <td class="text-end" data-order="14">
+                                            <span class="fw-bold ms-3">hansi@dyits.com.my</span>
+                                        </td>
+                                        <td class="text-end">0715935334</td>
+                                        <td class="text-end">IT</td>
+                                        <td class="text-end">
+                                            <a href="{{ url('#') }}"
+                                                class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                <i class="ki-outline ki-down fs-5 ms-1"></i></a>
+                                            <!--begin::Menu-->
+                                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                data-kt-menu="true">
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">View</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">Edit</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3"
+                                                        data-kt-ecommerce-product-filter="delete_row">Delete</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                            </div>
+                                            <!--end::Menu-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Thumbnail-->
+                                                <a href="{{ url('#') }}" class="symbol symbol-50px">
+                                                    <span class="symbol-label"
+                                                        style="background-image:url('/assets/media/avatars/300-20.jpg')"></span>
+                                                </a>
+                                                <!--end::Thumbnail-->
+                                                <div class="ms-5">
+                                                    <!--begin::Title-->
+                                                    <a href="{{ url('#') }}"
+                                                        class="text-gray-800 text-hover-primary fs-5 fw-bold"> Hansi
+                                                        Sooriyarathne</a>
+                                                    <!--end::Title-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="fw-bold">Designer</span>
+                                        </td>
+                                        <td class="text-end" data-order="14">
+                                            <span class="fw-bold ms-3">hansi@dyits.com.my</span>
+                                        </td>
+                                        <td class="text-end">0715935334</td>
+                                        <td class="text-end">IT</td>
+                                        <td class="text-end">
+                                            <a href="{{ url('#') }}"
+                                                class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                <i class="ki-outline ki-down fs-5 ms-1"></i></a>
+                                            <!--begin::Menu-->
+                                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                data-kt-menu="true">
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">View</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">Edit</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3"
+                                                        data-kt-ecommerce-product-filter="delete_row">Delete</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                            </div>
+                                            <!--end::Menu-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <!--begin::Thumbnail-->
+                                                <a href="{{ url('#') }}" class="symbol symbol-50px">
+                                                    <span class="symbol-label"
+                                                        style="background-image:url('/assets/media/avatars/300-20.jpg')"></span>
+                                                </a>
+                                                <!--end::Thumbnail-->
+                                                <div class="ms-5">
+                                                    <!--begin::Title-->
+                                                    <a href="{{ url('#') }}"
+                                                        class="text-gray-800 text-hover-primary fs-5 fw-bold"> Hansi
+                                                        Sooriyarathne</a>
+                                                    <!--end::Title-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="fw-bold">Designer</span>
+                                        </td>
+                                        <td class="text-end" data-order="14">
+                                            <span class="fw-bold ms-3">hansi@dyits.com.my</span>
+                                        </td>
+                                        <td class="text-end">0715935334</td>
+                                        <td class="text-end">IT</td>
+                                        <td class="text-end">
+                                            <a href="{{ url('#') }}"
+                                                class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                                                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                <i class="ki-outline ki-down fs-5 ms-1"></i></a>
+                                            <!--begin::Menu-->
+                                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                data-kt-menu="true">
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">View</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3">Edit</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                                                <div class="menu-item px-3">
+                                                    <a href="{{ url('#') }}" class="menu-link px-3"
+                                                        data-kt-ecommerce-product-filter="delete_row">Delete</a>
+                                                </div>
+                                                <!--end::Menu item-->
+                                            </div>
+                                            <!--end::Menu-->
+                                        </td>
+                                    </tr>
 
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-warning position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
-                                </div>
-                                <!--begin::Card body-->
-                            </div>
-                            <!--begin::Card-->
+                                </tbody>
+                            </table>
+                            <!--end::Table-->
                         </div>
-
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-warning position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
-                                </div>
-                                <!--begin::Card body-->
-                            </div>
-                            <!--begin::Card-->
-                        </div>
-
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
-                                </div>
-                                <!--begin::Card body-->
-                            </div>
-                            <!--begin::Card-->
-                        </div>
-
-                        <div class="col-md-6 col-xxl-4">
-                            <!--begin::Card-->
-                            <div class="card">
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex flex-center flex-column py-9 px-5">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-65px symbol-circle mb-5">
-                                        <img src="assets/media//avatars/300-11.jpg" alt="image" />
-                                        <div
-                                            class="bg-warning position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-body h-15px w-15px ms-n3 mt-n3">
-                                        </div>
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <a href="{{ url('#') }}"
-                                        class="fs-4 text-gray-800 text-hover-primary fw-bold mb-0">Patric
-                                        Watson</a>
-                                    <!--end::Name-->
-                                    <!--begin::Position-->
-                                    <div class="fw-semibold text-gray-500 mb-6">IT Department</div>
-                                    <!--end::Position-->
-
-                                    <button class="btn btn-sm btn-primary btn-flex btn-center">View User</button>
-
-                                </div>
-                                <!--begin::Card body-->
-                            </div>
-                            <!--begin::Card-->
-                        </div>
-
+                        <!--end::Card body-->
                     </div>
+
                 </div>
                 <!--end::Content container-->
             </div>
