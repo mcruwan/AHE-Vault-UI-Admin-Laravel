@@ -136,18 +136,11 @@
                                         <option value="Pending Approval">Pending Approval</option>
                                         <option value="inactive">Inactive</option>
                                     </select>
-                                    <!--end::Select2-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">Set the institution status.</div>
-                                    <!--end::Description-->
-                                    <!--begin::Datepicker-->
-                                    <div class="d-none mt-10">
-                                        <label for="kt_ecommerce_add_product_status_datepicker" class="form-label">Select
-                                            publishing date and time</label>
-                                        <input class="form-control" id="kt_ecommerce_add_product_status_datepicker"
-                                            placeholder="Pick date & time" />
+                                    <div class="text-muted fs-7 text-center">Set the institution status.</div>
+                                    <div class="text-center">
+                                        <a href="{{ url('#') }}" class="btn btn-sm fw-bold btn-primary mt-5"
+                                            style="height: 35px;">Update</a>
                                     </div>
-                                    <!--end::Datepicker-->
                                 </div>
                                 <!--end::Card body-->
                             </div>
@@ -162,14 +155,8 @@
                                     </div>
                                     <!--end::Card title-->
                                 </div>
-                                <!--end::Card header-->
-                                <!--begin::Card body-->
                                 <div class="card-body pt-0">
-                                    <!--begin::Input group-->
-                                    <!--begin::Label-->
                                     <label class="form-label">Categories</label>
-                                    <!--end::Label-->
-                                    <!--begin::Select2-->
                                     <select class="form-select mb-2" data-control="select2"
                                         data-placeholder="Select an option" data-allow-clear="true" multiple="multiple">
                                         <option></option>
@@ -179,117 +166,33 @@
                                     </select>
 
                                     <label class="form-label d-block">Tags</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
                                     <input id="kt_ecommerce_add_product_tags" name="kt_ecommerce_add_product_tags"
                                         class="form-control mb-2" value="new, trending, sale" />
-                                    <!--end::Input-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">Add tags to a institution.</div>
-                                    <!--end::Description-->
-                                    <!--end::Input group-->
-                                </div>
-                                <!--end::Card body-->
-                            </div>
-                            <!--end::Category & tags-->
-                            <!--begin::Card widget 6-->
-                            <div class="card card-flush">
-                                <!--begin::Header-->
-                                <div class="card-header pt-5">
-                                    <!--begin::Title-->
-                                    <div class="card-title d-flex flex-column">
-                                        <!--begin::Info-->
-                                        <div class="d-flex align-items-center">
-                                            <!--begin::Currency-->
-                                            <span class="fs-4 fw-semibold text-gray-500 me-1 align-self-start">$</span>
-                                            <!--end::Currency-->
-                                            <!--begin::Amount-->
-                                            <span class="fs-2hx fw-bold text-gray-900 me-2 lh-1 ls-n2">2,420</span>
-                                            <!--end::Amount-->
-                                            <!--begin::Badge-->
-                                            <span class="badge badge-light-success fs-base">
-                                                <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>2.6%</span>
-                                            <!--end::Badge-->
-                                        </div>
-                                        <!--end::Info-->
-                                        <!--begin::Subtitle-->
-                                        <span class="text-gray-500 pt-1 fw-semibold fs-6">Average Daily Sales</span>
-                                        <!--end::Subtitle-->
+                                    <div class="text-muted fs-7 text-center">Add tags to a institution.</div>
+                                    <div class="text-center">
+                                        <a href="{{ url('#') }}" class="btn btn-sm fw-bold btn-primary mt-5"
+                                            style="height: 35px;">Update</a>
                                     </div>
-                                    <!--end::Title-->
                                 </div>
-                                <!--end::Header-->
-                                <!--begin::Card body-->
-                                <div class="card-body d-flex align-items-end px-0 pb-0">
-                                    <!--begin::Chart-->
-                                    <div id="kt_card_widget_6_chart" class="w-100" style="height: 80px"></div>
-                                    <!--end::Chart-->
-                                </div>
-                                <!--end::Card body-->
                             </div>
-
-                            <!--end::Card widget 6-->
-                            <!--begin::Template settings-->
-                            <div class="card card-flush py-4">
-                                <!--begin::Card header-->
-                                <div class="card-header">
-                                    <!--begin::Card title-->
-                                    <div class="card-title">
-                                        <h2>Institution Template</h2>
-                                    </div>
-                                    <!--end::Card title-->
-                                </div>
-                                <!--end::Card header-->
-                                <!--begin::Card body-->
-                                <div class="card-body pt-0">
-                                    <!--begin::Select store template-->
-                                    <label for="kt_ecommerce_add_product_store_template" class="form-label">Select a
-                                        institution template</label>
-                                    <!--end::Select store template-->
-                                    <!--begin::Select2-->
-                                    <select class="form-select mb-2" data-control="select2" data-hide-search="true"
-                                        data-placeholder="Select an option" id="kt_ecommerce_add_product_store_template">
-                                        <option></option>
-                                        <option value="default" selected="selected">Default template</option>
-                                        <option value="electronics">Electronics</option>
-                                        <option value="office">Office stationary</option>
-                                        <option value="fashion">Fashion</option>
-                                    </select>
-                                    <!--end::Select2-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">Assign a template from your current theme to define how a
-                                        single institution is displayed.</div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Card body-->
-                            </div>
-                            <!--end::Template settings-->
                         </div>
-                        <!--end::Aside column-->
-                        <!--begin::Main column-->
+
                         <div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
                             <!--begin:::Tabs-->
                             <ul
                                 class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-n2">
-                                <!--begin:::Tab item-->
                                 <li class="nav-item">
                                     <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab"
                                         href="#kt_ecommerce_add_product_general">General</a>
                                 </li>
-                                <!--end:::Tab item-->
-                                <!--begin:::Tab item-->
-                                <li class="nav-item">
-                                    <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
-                                        href="#kt_ecommerce_add_product_advanced">Contacts</a>
-                                </li>
-                                <!--end:::Tab item-->
-                                <!--begin:::Tab item-->
                                 <li class="nav-item">
                                     <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
                                         href="#kt_ecommerce_add_product_users">Users</a>
                                 </li>
-                                <!--end:::Tab item-->
-                                <!--begin:::Tab item-->
+                                <li class="nav-item">
+                                    <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
+                                        href="#kt_ecommerce_add_product_advanced">Contacts</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
                                         href="#kt_ecommerce_add_product_reviews">Messages</a>
@@ -298,10 +201,7 @@
                                     <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
                                         href="#ranking_tab">Ranking</a>
                                 </li>
-                                <!--end:::Tab item-->
                             </ul>
-                            <!--end:::Tabs-->
-                            <!--begin::Tab content-->
                             <div class="tab-content">
                                 <!--begin::Tab pane-->
                                 <div class="tab-pane fade show active" id="kt_ecommerce_add_product_general"
@@ -417,241 +317,6 @@
                                             </div>
                                             <!--end::Card header-->
                                         </div>
-                                        <!--end::General options-->
-                                        <!--begin::Media-->
-                                        <div class="card card-flush py-4">
-                                            <!--begin::Card header-->
-                                            <div class="card-header">
-                                                <div class="card-title">
-                                                    <h2>Media</h2>
-                                                </div>
-                                            </div>
-                                            <!--end::Card header-->
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-0">
-                                                <!--begin::Input group-->
-                                                <div class="fv-row mb-2">
-                                                    <!--begin::Dropzone-->
-                                                    <div class="dropzone" id="kt_ecommerce_add_product_media">
-                                                        <!--begin::Message-->
-                                                        <div class="dz-message needsclick">
-                                                            <!--begin::Icon-->
-                                                            <i class="ki-outline ki-file-up text-primary fs-3x"></i>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="ms-4">
-                                                                <h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here
-                                                                    or click to upload.</h3>
-                                                                <span class="fs-7 fw-semibold text-gray-500">Upload up to
-                                                                    10 files</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Dropzone-->
-                                                </div>
-                                                <!--end::Input group-->
-                                                <!--begin::Description-->
-                                                <div class="text-muted fs-7">Set the institution media gallery.</div>
-                                                <!--end::Description-->
-                                            </div>
-                                            <!--end::Card header-->
-                                        </div>
-                                        <!--end::Media-->
-                                        <!--begin::Pricing-->
-                                        <div class="card card-flush py-4">
-                                            <!--begin::Card header-->
-                                            <div class="card-header">
-                                                <div class="card-title">
-                                                    <h2>Pricing</h2>
-                                                </div>
-                                            </div>
-                                            <!--end::Card header-->
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-0">
-                                                <!--begin::Input group-->
-                                                <div class="mb-10 fv-row">
-                                                    <!--begin::Label-->
-                                                    <label class="required form-label">Base Price</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Input-->
-                                                    <input type="text" name="price" class="form-control mb-2"
-                                                        placeholder="Institution price" value="199.99" />
-                                                    <!--end::Input-->
-                                                    <!--begin::Description-->
-                                                    <div class="text-muted fs-7">Set the institution price.</div>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Input group-->
-                                                <!--begin::Input group-->
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
-                                                    <label class="fs-6 fw-semibold mb-2">Discount Type
-                                                        <span class="ms-1" data-bs-toggle="tooltip"
-                                                            title="Select a discount type that will be applied to this institution">
-                                                            <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
-                                                        </span></label>
-                                                    <!--End::Label-->
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="discount_option" value="1" />
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span class="fs-4 fw-bold text-gray-800 d-block">No
-                                                                        Discount</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <!--end::Col-->
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="discount_option" value="2"
-                                                                        checked="checked" />
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bold text-gray-800 d-block">Percentage
-                                                                        %</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <!--end::Col-->
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="discount_option" value="3" />
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span class="fs-4 fw-bold text-gray-800 d-block">Fixed
-                                                                        Price</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <!--end::Col-->
-                                                    </div>
-                                                    <!--end::Row-->
-                                                </div>
-                                                <!--end::Input group-->
-                                                <!--begin::Input group-->
-                                                <div class="mb-10 fv-row"
-                                                    id="kt_ecommerce_add_product_discount_percentage">
-                                                    <!--begin::Label-->
-                                                    <label class="form-label">Set Discount Percentage</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Slider-->
-                                                    <div class="d-flex flex-column text-center mb-5">
-                                                        <div class="d-flex align-items-start justify-content-center mb-7">
-                                                            <span class="fw-bold fs-3x"
-                                                                id="kt_ecommerce_add_product_discount_label">0</span>
-                                                            <span class="fw-bold fs-4 mt-1 ms-2">%</span>
-                                                        </div>
-                                                        <div id="kt_ecommerce_add_product_discount_slider"
-                                                            class="noUi-sm"></div>
-                                                    </div>
-                                                    <!--end::Slider-->
-                                                    <!--begin::Description-->
-                                                    <div class="text-muted fs-7">Set a percentage discount to be applied on
-                                                        this institution.</div>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Input group-->
-                                                <!--begin::Input group-->
-                                                <div class="d-none mb-10 fv-row"
-                                                    id="kt_ecommerce_add_product_discount_fixed">
-                                                    <!--begin::Label-->
-                                                    <label class="form-label">Fixed Discounted Price</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Input-->
-                                                    <input type="text" name="dicsounted_price"
-                                                        class="form-control mb-2" placeholder="Discounted price" />
-                                                    <!--end::Input-->
-                                                    <!--begin::Description-->
-                                                    <div class="text-muted fs-7">Set the discounted institution price. The
-                                                        institution will be reduced at the determined fixed price</div>
-                                                    <!--end::Description-->
-                                                </div>
-                                                <!--end::Input group-->
-                                                <!--begin::Tax-->
-                                                <div class="d-flex flex-wrap gap-5">
-                                                    <!--begin::Input group-->
-                                                    <div class="fv-row w-100 flex-md-root">
-                                                        <!--begin::Label-->
-                                                        <label class="required form-label">Tax Class</label>
-                                                        <!--end::Label-->
-                                                        <!--begin::Select2-->
-                                                        <select class="form-select mb-2" name="tax"
-                                                            data-control="select2" data-hide-search="true"
-                                                            data-placeholder="Select an option">
-                                                            <option></option>
-                                                            <option value="0">Tax Free</option>
-                                                            <option value="1" selected="selected">Taxable Goods
-                                                            </option>
-                                                            <option value="2">Downloadable Institution</option>
-                                                        </select>
-                                                        <!--end::Select2-->
-                                                        <!--begin::Description-->
-                                                        <div class="text-muted fs-7">Set the institution tax class.</div>
-                                                        <!--end::Description-->
-                                                    </div>
-                                                    <!--end::Input group-->
-                                                    <!--begin::Input group-->
-                                                    <div class="fv-row w-100 flex-md-root">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">VAT Amount (%)</label>
-                                                        <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control mb-2" value="35" />
-                                                        <!--end::Input-->
-                                                        <!--begin::Description-->
-                                                        <div class="text-muted fs-7">Set the institution VAT about.</div>
-                                                        <!--end::Description-->
-                                                    </div>
-                                                    <!--end::Input group-->
-                                                </div>
-                                                <!--end:Tax-->
-                                            </div>
-                                            <!--end::Card header-->
-                                        </div>
-                                        <!--end::Pricing-->
                                     </div>
 
                                 </div>
@@ -676,37 +341,16 @@
                                                         </colgroup>
                                                         <thead class="fs-7 text-gray-500 text-uppercase">
                                                             <tr role="row">
-                                                                <th class="min-w-250px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="0" rowspan="1" colspan="1"
-                                                                    aria-label="User: Activate to sort" tabindex="0">
-                                                                    <span class="dt-column-title"
-                                                                        role="button">User</span><span
-                                                                        class="dt-column-order"></span>
-                                                                </th>
-                                                                <th class="min-w-150px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="1" rowspan="1" colspan="1"
-                                                                    aria-label="Date: Activate to sort" tabindex="0">
-                                                                    <span class="dt-column-title"
-                                                                        role="button">Date</span><span
-                                                                        class="dt-column-order"></span>
-                                                                </th>
-                                                                <th class="min-w-90px dt-type-numeric dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="2" rowspan="1" colspan="1"
-                                                                    aria-label="Job Title: Activate to sort"
-                                                                    tabindex="0"><span class="dt-column-title"
-                                                                        role="button">Job Title</span><span
-                                                                        class="dt-column-order"></span></th>
-                                                                <th class="min-w-90px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="3" rowspan="1" colspan="1"
-                                                                    aria-label="Department: Activate to sort"
-                                                                    tabindex="0"><span class="dt-column-title"
-                                                                        role="button">Department</span><span
-                                                                        class="dt-column-order"></span></th>
-                                                                <th class="min-w-50px text-end dt-orderable-none"
-                                                                    data-dt-column="4" rowspan="1" colspan="1"
-                                                                    aria-label="Details"><span
-                                                                        class="dt-column-title">Action</span><span
-                                                                        class="dt-column-order"></span></th>
+                                                                <th class="min-w-250px"><span class="dt-column-title"
+                                                                        role="button">User</span></th>
+                                                                <th class="min-w-150px"><span class="dt-column-title"
+                                                                        role="button">Date</span></th>
+                                                                <th class="min-w-90px"><span class="dt-column-title"
+                                                                        role="button">Job Title</span></th>
+                                                                <th class="min-w-90px"><span class="dt-column-title"
+                                                                        role="button">Department</span></th>
+                                                                <th class="min-w-50px" style="text-align: right;"><span
+                                                                        class="dt-column-title">Action</span></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="fs-6">
@@ -759,6 +403,10 @@
                                                                         <div class="menu-item px-3">
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
+                                                                        </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
@@ -827,6 +475,10 @@
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
+                                                                        </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
                                                                         <div class="menu-item px-3">
@@ -889,6 +541,10 @@
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
+                                                                        </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
                                                                         <div class="menu-item px-3">
@@ -948,13 +604,12 @@
                                                                                 Message</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('reply') }}"
-                                                                                class="menu-link px-3">Send
-                                                                                Message</a>
-                                                                        </div>
-                                                                        <div class="menu-item px-3">
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
+                                                                        </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
@@ -1018,6 +673,10 @@
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
+                                                                        </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
                                                                         <div class="menu-item px-3">
@@ -1034,8 +693,8 @@
                                                         <tfoot></tfoot>
                                                     </table>
                                                 </div>
-                                                <div id="" class="row">
-                                                    <div id=""
+                                                <div class="row">
+                                                    <div
                                                         class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar">
                                                         <div><select name="kt_project_users_table_length"
                                                                 aria-controls="kt_project_users_table"
@@ -1047,7 +706,7 @@
                                                                 <option value="100">100</option>
                                                             </select><label for="dt-length-0"></label></div>
                                                     </div>
-                                                    <div id=""
+                                                    <div
                                                         class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
                                                         <div class="dt-paging paging_simple_numbers">
                                                             <ul class="pagination">
@@ -1105,37 +764,16 @@
                                                         </colgroup>
                                                         <thead class="fs-7 text-gray-500 text-uppercase">
                                                             <tr role="row">
-                                                                <th class="min-w-250px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="0" rowspan="1" colspan="1"
-                                                                    aria-label="User: Activate to sort" tabindex="0">
-                                                                    <span class="dt-column-title"
-                                                                        role="button">User</span><span
-                                                                        class="dt-column-order"></span>
-                                                                </th>
-                                                                <th class="min-w-150px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="1" rowspan="1" colspan="1"
-                                                                    aria-label="Date: Activate to sort" tabindex="0">
-                                                                    <span class="dt-column-title"
-                                                                        role="button">Date</span><span
-                                                                        class="dt-column-order"></span>
-                                                                </th>
-                                                                <th class="min-w-90px dt-type-numeric dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="2" rowspan="1" colspan="1"
-                                                                    aria-label="Job Title: Activate to sort"
-                                                                    tabindex="0"><span class="dt-column-title"
-                                                                        role="button">Job Title</span><span
-                                                                        class="dt-column-order"></span></th>
-                                                                <th class="min-w-90px dt-orderable-asc dt-orderable-desc"
-                                                                    data-dt-column="3" rowspan="1" colspan="1"
-                                                                    aria-label="Department: Activate to sort"
-                                                                    tabindex="0"><span class="dt-column-title"
-                                                                        role="button">Department</span><span
-                                                                        class="dt-column-order"></span></th>
-                                                                <th class="min-w-50px text-end dt-orderable-none"
-                                                                    data-dt-column="4" rowspan="1" colspan="1"
-                                                                    aria-label="Details"><span
-                                                                        class="dt-column-title">Action</span><span
-                                                                        class="dt-column-order"></span></th>
+                                                                <th class="min-w-250px"><span class="dt-column-title"
+                                                                        role="button">User</span></th>
+                                                                <th class="min-w-150px"><span class="dt-column-title"
+                                                                        role="button">Date</span></th>
+                                                                <th class="min-w-90px"><span class="dt-column-title"
+                                                                        role="button">Job Title</span></th>
+                                                                <th class="min-w-90px"><span class="dt-column-title"
+                                                                        role="button">Department</span></th>
+                                                                <th class="min-w-50px" style="text-align: right;"><span
+                                                                        class="dt-column-title">Action</span></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="fs-6">
@@ -1188,6 +826,10 @@
                                                                         <div class="menu-item px-3">
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
+                                                                        </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
@@ -1246,10 +888,18 @@
                                                                     <!--begin::Menu-->
                                                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-150px py-4"
                                                                         data-kt-menu="true">
-                                                                        <!--begin::Menu item-->
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('reply') }}"
+                                                                                class="menu-link px-3">Send
+                                                                                Message</a>
+                                                                        </div>
                                                                         <div class="menu-item px-3">
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
+                                                                        </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
@@ -1313,6 +963,10 @@
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
+                                                                        </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
                                                                         <div class="menu-item px-3">
@@ -1374,6 +1028,10 @@
                                                                         <div class="menu-item px-3">
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
+                                                                        </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
@@ -1437,6 +1095,10 @@
                                                                             <a href="{{ url('user-overview') }}"
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
+                                                                        <div class="menu-item px-3">
+                                                                            <a href="{{ url('user-edit') }}"
+                                                                                class="menu-link px-3">Edit</a>
+                                                                        </div>
                                                                         <!--end::Menu item-->
                                                                         <!--begin::Menu item-->
                                                                         <div class="menu-item px-3">
@@ -1453,8 +1115,8 @@
                                                         <tfoot></tfoot>
                                                     </table>
                                                 </div>
-                                                <div id="" class="row">
-                                                    <div id=""
+                                                <div class="row">
+                                                    <div
                                                         class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar">
                                                         <div><select name="kt_project_users_table_length"
                                                                 aria-controls="kt_project_users_table"
@@ -1466,7 +1128,7 @@
                                                                 <option value="100">100</option>
                                                             </select><label for="dt-length-0"></label></div>
                                                     </div>
-                                                    <div id=""
+                                                    <div
                                                         class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
                                                         <div class="dt-paging paging_simple_numbers">
                                                             <ul class="pagination">
@@ -1507,450 +1169,464 @@
                                 <!--begin::Tab pane-->
                                 <div class="tab-pane fade" id="kt_ecommerce_add_product_reviews" role="tab-panel">
                                     <div class="d-flex flex-column gap-7 gap-lg-10">
-                                        <!--begin::Reviews-->
-                                        <div class="card card-flush py-4">
-                                            <!--begin::Card header-->
-                                            <div class="card-header">
-                                                <!--begin::Card title-->
-                                                <div class="card-title">
-                                                    <h2>Messages</h2>
+                                        <div class="table-responsive">
+                                            <!--begin::Table-->
+                                            <div id="kt_project_users_table_wrapper"
+                                                class="dt-container dt-bootstrap5 dt-empty-footer card p-4">
+                                                <div class="table-responsive">
+                                                    <!--begin::Table-->
+                                                    <table
+                                                        class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bold dataTable"
+                                                        style="width: 0px;">
+                                                        <colgroup>
+                                                            <col style="width: 0px;">
+                                                            <col style="width: 0px;">
+                                                            <col style="width: 0px;">
+                                                            <col style="width: 0px;">
+                                                        </colgroup>
+                                                        <thead class="fs-7 text-gray-500 text-uppercase">
+                                                            <tr role="row">
+                                                                <th class="min-w-25px">
+                                                                    <span class="dt-column-title" role="button"></span>
+                                                                </th>
+                                                                <th class="min-w-200px"
+                                                                    aria-label="User: Activate to sort" tabindex="0">
+                                                                    <span class="dt-column-title"
+                                                                        role="button">Client</span>
+                                                                </th>
+                                                                <th class="min-w-150px dt-orderable-asc dt-orderable-desc"
+                                                                    data-dt-column="1" rowspan="1" colspan="1"
+                                                                    aria-label="Date: Activate to sort" tabindex="0">
+                                                                    <span class="dt-column-title"
+                                                                        role="button">Message</span>
+                                                                </th>
+                                                                <th class="min-w-90px" style="text-align: right;"><span
+                                                                        class="dt-column-title" role="button">Date</span>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-danger">
+                                                                                <span class="text-danger">M</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Melody Macy</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">I like this design</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">Today</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-1.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Max Smith</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Good institution for
+                                                                    outdoors
+                                                                    or indoors</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">day ago</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-5.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Sean Bean</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Awesome quality with
+                                                                    great
+                                                                    materials used, but could be more comfortable</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">11:20 PM</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-25.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Brian Cox</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">This is the best
+                                                                    institution
+                                                                    I've ever used.</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">2 days ago</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-warning">
+                                                                                <span class="text-warning">C</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Mikaela Collins</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">I thought it was just
+                                                                    average, I prefer other brands</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">July 25</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-9.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Francis Mitcham</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Beautifully crafted.
+                                                                    Worth
+                                                                    every penny.</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">July 24</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-danger">
+                                                                                <span class="text-danger">O</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Olivia Wild</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Awesome value for money.
+                                                                    Shipping could be faster tho.</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">July 13</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-primary">
+                                                                                <span class="text-primary">N</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Neil Owen</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Excellent quality, I got
+                                                                    it
+                                                                    for my son's birthday and he loved it!</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">May 25</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-23.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Dan Wilson</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">I got this for Christmas
+                                                                    last
+                                                                    year, and it's still the best institution I've ever
+                                                                    used!
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">April 15</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-danger">
+                                                                                <span class="text-danger">E</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Emma Bold</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Was skeptical at first,
+                                                                    but
+                                                                    after using it for 3 months, I'm hooked! Will definately
+                                                                    buy
+                                                                    another!</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">April 3</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-12.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Ana Crown</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Great institution, too
+                                                                    bad I
+                                                                    missed out on the sale.</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">March 17</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <div class="symbol-label bg-light-info">
+                                                                                <span class="text-info">A</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">Robert Doe</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Got this on sale! Best
+                                                                    decision ever!</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">March 12</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--begin::Checkbox-->
+                                                                    <div
+                                                                        class="form-check form-check-sm form-check-custom form-check-solid mt-1">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            value="1" />
+                                                                    </div>
+                                                                    <!--end::Checkbox-->
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="{{ url('reply') }}"
+                                                                        class="d-flex text-gray-900 text-gray-800 text-hover-primary">
+                                                                        <!--begin::Avatar-->
+                                                                        <div class="symbol symbol-circle symbol-25px me-3">
+                                                                            <span class="symbol-label"
+                                                                                style="background-image:url(assets/media/avatars/300-13.jpg)"></span>
+                                                                        </div>
+                                                                        <!--end::Avatar-->
+                                                                        <!--begin::Name-->
+                                                                        <span class="fw-bold">John Miller</span>
+                                                                        <!--end::Name-->
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-gray-600 fw-bold">Firesale is on! Buy now!
+                                                                    Totally worth it!</td>
+                                                                <td class="text-end">
+                                                                    <span class="fw-semibold text-muted">March 11</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--end::Table-->
                                                 </div>
-                                                <!--end::Card title-->
-                                            </div>
-                                            <!--end::Card header-->
-                                            <!--begin::Card body-->
-                                            <div class="card-body pt-0">
-                                                <!--begin::Table-->
-                                                <table class="table table-row-dashed fs-6 gy-5 my-0"
-                                                    id="kt_ecommerce_add_product_reviews">
-                                                    <thead>
-                                                        <tr
-                                                            class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-                                                            <th class="w-10px pe-2">
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid me-3">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        data-kt-check="true"
-                                                                        data-kt-check-target="#kt_ecommerce_add_product_reviews .form-check-input"
-                                                                        value="1" />
-                                                                </div>
-                                                            </th>
-                                                            <th class="min-w-175px">Client</th>
-                                                            <th class="min-w-175px">Message</th>
-                                                            <th class="min-w-100px text-end fs-7">Date</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-danger">
-                                                                            <span class="text-danger">M</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Melody Macy</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">I like this design</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">Today</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-1.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Max Smith</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Good institution for outdoors
-                                                                or indoors</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">day ago</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-5.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Sean Bean</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Awesome quality with great
-                                                                materials used, but could be more comfortable</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">11:20 PM</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-25.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Brian Cox</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">This is the best institution
-                                                                I've ever used.</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">2 days ago</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-warning">
-                                                                            <span class="text-warning">C</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Mikaela Collins</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">I thought it was just
-                                                                average, I prefer other brands</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">July 25</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-9.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Francis Mitcham</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Beautifully crafted. Worth
-                                                                every penny.</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">July 24</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-danger">
-                                                                            <span class="text-danger">O</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Olivia Wild</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Awesome value for money.
-                                                                Shipping could be faster tho.</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">July 13</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-primary">
-                                                                            <span class="text-primary">N</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Neil Owen</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Excellent quality, I got it
-                                                                for my son's birthday and he loved it!</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">May 25</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-23.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Dan Wilson</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">I got this for Christmas last
-                                                                year, and it's still the best institution I've ever used!
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">April 15</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-danger">
-                                                                            <span class="text-danger">E</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Emma Bold</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Was skeptical at first, but
-                                                                after using it for 3 months, I'm hooked! Will definately buy
-                                                                another!</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">April 3</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-12.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Ana Crown</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Great institution, too bad I
-                                                                missed out on the sale.</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">March 17</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <div class="symbol-label bg-light-info">
-                                                                            <span class="text-info">A</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">Robert Doe</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Got this on sale! Best
-                                                                decision ever!</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">March 12</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <!--begin::Checkbox-->
-                                                                <div
-                                                                    class="form-check form-check-sm form-check-custom form-check-solid mt-1">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="1" />
-                                                                </div>
-                                                                <!--end::Checkbox-->
-                                                            </td>
-
-                                                            <td>
-                                                                <a href="{{ url('reply') }}"
-                                                                    class="d-flex text-gray-900 text-gray-800 text-hover-primary">
-                                                                    <!--begin::Avatar-->
-                                                                    <div class="symbol symbol-circle symbol-25px me-3">
-                                                                        <span class="symbol-label"
-                                                                            style="background-image:url(assets/media/avatars/300-13.jpg)"></span>
-                                                                    </div>
-                                                                    <!--end::Avatar-->
-                                                                    <!--begin::Name-->
-                                                                    <span class="fw-bold">John Miller</span>
-                                                                    <!--end::Name-->
-                                                                </a>
-                                                            </td>
-                                                            <td class="text-gray-600 fw-bold">Firesale is on! Buy now!
-                                                                Totally worth it!</td>
-                                                            <td class="text-end">
-                                                                <span class="fw-semibold text-muted">March 11</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!--end::Table-->
                                             </div>
                                             <!--end::Card body-->
                                         </div>
@@ -2049,19 +1725,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--end::Tab content-->
-
                         </div>
-                        <!--end::Main column-->
                     </form>
-                    <!--end::Form-->
                 </div>
-                <!--end::Content container-->
             </div>
-
-            <!--end::Content-->
         </div>
-        <!--end::Content wrapper-->
     </div>
 
 
