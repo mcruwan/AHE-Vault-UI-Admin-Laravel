@@ -222,7 +222,7 @@
                                                 <!--end::Card title-->
                                                 <!--begin::Action-->
                                                 <a href="{{ url('#') }}" class="btn btn-sm fw-bold btn-primary"
-                                                    data-bs-toggle="modal" data-bs-target="#kt_modal_edit"
+                                                    data-bs-toggle="modal" data-bs-target="#insitute-info-edit"
                                                     style="height: 35px;">Edit Data</a>
                                                 <!--end::Action-->
                                             </div>
@@ -410,7 +410,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -481,7 +481,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -547,7 +547,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -613,7 +613,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -679,7 +679,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -833,7 +833,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -903,7 +903,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -969,7 +969,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1035,7 +1035,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1101,7 +1101,7 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a href="{{ url('user-edit') }}"
+                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1740,7 +1740,7 @@
     </div>
 
 
-    <div class="modal fade" id="kt_modal_edit" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="insitute-info-edit" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-900px">
             <!--begin::Modal content-->
@@ -2293,6 +2293,70 @@
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
                             </button>
                             <!--end::Button-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="user-edit" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered mw-900px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Informations</h2>
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <i class="ki-outline ki-cross fs-1"></i>
+                    </div>
+                </div>
+                <div class="modal-body py-lg-10 px-lg-10">
+                    <form id="update-user-information" class="form" action="#">
+                        <div class="d-flex flex-column gap-7 gap-lg-10">
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">First Name</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">Last Name</label>
+                                <div class="col-lg-8 fv-row">
+                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">Job Title</label>
+                                <div class="col-lg-8 fv-row">
+                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Job Title" />
+                                </div>
+                            </div>
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">Email Address</label>
+                                <div class="col-lg-8">
+                                    <input type="email" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Email Address" />
+                                </div>
+                            </div>
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">Contact Number</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Contact Number" />
+                                </div>
+                            </div>
+                            <div class="row mb-7">
+                                <label class="col-lg-4 fw-semibold text-muted">Department/Office</label>
+                                <div class="col-lg-8">                                    
+                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Department/Office" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-5">
+                            <a href="{{ url('#') }}" data-bs-dismiss="modal" class="btn btn-light me-5">Cancel</a>                            
+                            <button type="submit" class="btn btn-primary">
+                                <span class="indicator-label">Save Changes</span>
+                                <span class="indicator-progress">Please wait...
+                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                            </button>
                         </div>
                     </form>
                 </div>
