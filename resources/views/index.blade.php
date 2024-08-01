@@ -55,14 +55,14 @@
                             <div class="fv-row mb-8">
                                 <!--begin::Email-->
                                 <input type="text" placeholder="Email" name="email" autocomplete="off"
-                                    class="form-control bg-transparent" />
+                                    class="form-control bg-transparent" required />
                                 <!--end::Email-->
                             </div>
                             <!--end::Input group=-->
                             <div class="fv-row mb-3">
                                 <!--begin::Password-->
                                 <input type="password" placeholder="Password" name="password" autocomplete="off"
-                                    class="form-control bg-transparent" />
+                                    class="form-control bg-transparent" required />
                                 <!--end::Password-->
                             </div>
                             <!--end::Input group=-->

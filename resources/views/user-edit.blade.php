@@ -69,7 +69,7 @@
                                 <div class="card-body p-9">
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">First Name</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">First Name</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8">
@@ -77,7 +77,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="text" name="fname"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="First Name" />
+                                                        placeholder="First Name" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">Last Name</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">Last Name</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8 fv-row">
@@ -93,7 +93,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="text" name="lname"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="Last Name" />
+                                                        placeholder="Last Name" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">Job Title</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">Job Title</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8 fv-row">
@@ -109,7 +109,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="text" name="title"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="Job Title" />
+                                                        placeholder="Job Title" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">Email Address</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">Email Address</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8">
@@ -125,7 +125,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="email" name="email"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="Email Address" />
+                                                        placeholder="Email Address" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">Contact Number</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">Contact Number</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8">
@@ -141,7 +141,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="text" name="phone"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="Contact Number" />
+                                                        placeholder="Contact Number" required />
                                                 </div>
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@
                                     </div>
                                     <div class="row mb-7">
                                         <!--begin::Label-->
-                                        <label class="col-lg-4 fw-semibold text-muted">Department/Office</label>
+                                        <label class="col-lg-4 fw-semibold text-muted required">Department/Office</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-8">
@@ -157,7 +157,7 @@
                                                 <div class="col-lg-6 fv-row">
                                                     <input type="text" name="department"
                                                         class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                        placeholder="Department/Office" />
+                                                        placeholder="Department/Office" required />
                                                 </div>
                                             </div>
                                         </div>

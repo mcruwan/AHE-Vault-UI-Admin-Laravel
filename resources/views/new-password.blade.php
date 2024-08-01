@@ -66,7 +66,7 @@
                                     <!--begin::Input wrapper-->
                                     <div class="position-relative mb-3">
                                         <input class="form-control bg-transparent" type="password" placeholder="Password"
-                                            name="password" autocomplete="off" />
+                                            name="password" autocomplete="off" required />
                                         <span
                                             class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
                                             data-kt-password-meter-control="visibility">
@@ -97,14 +97,15 @@
                             <div class="fv-row mb-8">
                                 <!--begin::Repeat Password-->
                                 <input type="password" placeholder="Repeat Password" name="confirm-password"
-                                    autocomplete="off" class="form-control bg-transparent" />
+                                    autocomplete="off" class="form-control bg-transparent" required />
                                 <!--end::Repeat Password-->
                             </div>
                             <!--end::Input group=-->
                             <!--begin::Input group=-->
                             <div class="fv-row mb-8">
                                 <label class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="toc" value="1" />
+                                    <input class="form-check-input" type="checkbox" name="toc" value="1"
+                                        required />
                                     <span class="form-check-label fw-semibold text-gray-700 fs-6 ms-1">I Agree &
                                         <a href="{{ url('#') }}" class="ms-1 link-primary">Terms and
                                             conditions</a>.</span>
@@ -113,7 +114,7 @@
                             <!--end::Input group=-->
                             <!--begin::Action-->
                             <div class="d-grid mb-10">
-                                <button type="button" id="kt_new_password_submit" class="btn btn-primary">
+                                <button type="submit" id="kt_new_password_submit" class="btn btn-primary">
                                     <!--begin::Indicator label-->
                                     <span class="indicator-label">Submit</span>
                                     <!--end::Indicator label-->

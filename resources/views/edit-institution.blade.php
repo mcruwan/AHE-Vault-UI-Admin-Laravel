@@ -131,8 +131,9 @@
                                 <div class="card-body pt-0">
                                     <form id="update-status" class="form" action="#">
                                         <!--begin::Select2-->
-                                        <select class="form-select mb-2" data-control="select2" data-hide-search="true"
-                                            data-placeholder="Select an option" id="kt_ecommerce_add_product_status_select">
+                                        <select class="form-select mb-2" required data-control="select2"
+                                            data-hide-search="true" data-placeholder="Select an option"
+                                            id="kt_ecommerce_add_product_status_select">
                                             <option></option>
                                             <option value="Active" selected="selected">Active</option>
                                             <option value="Pending Approval">Pending Approval</option>
@@ -140,8 +141,8 @@
                                         </select>
                                         <div class="text-muted fs-7 text-center">Set the institution status.</div>
                                         <div class="text-center">
-                                            <a href="{{ url('#') }}" class="btn btn-sm fw-bold btn-primary mt-5"
-                                                style="height: 35px;">Update</a>
+                                            <button type="submit"
+                                                class="btn btn-sm fw-bold btn-primary mt-5">Update</button>
                                         </div>
                                     </form>
                                 </div>
@@ -161,7 +162,7 @@
                                 <div class="card-body pt-0">
                                     <form id="update-categories" class="form" action="#">
                                         <label class="form-label">Categories</label>
-                                        <select class="form-select mb-2" data-control="select2"
+                                        <select class="form-select mb-2" required data-control="select2"
                                             data-placeholder="Select an option" data-allow-clear="true" multiple="multiple">
                                             <option></option>
                                             <option value="Public">Public</option>
@@ -170,12 +171,13 @@
                                         </select>
 
                                         <label class="form-label d-block">Tags</label>
-                                        <input id="kt_ecommerce_add_product_tags" name="kt_ecommerce_add_product_tags"
-                                            class="form-control mb-2" value="new, trending, sale" />
+                                        <input id="kt_ecommerce_add_product_tags" required
+                                            name="kt_ecommerce_add_product_tags" class="form-control mb-2"
+                                            value="new, trending, sale" />
                                         <div class="text-muted fs-7 text-center">Add tags to a institution.</div>
                                         <div class="text-center">
-                                            <a href="{{ url('#') }}" class="btn btn-sm fw-bold btn-primary mt-5"
-                                                style="height: 35px;">Update</a>
+                                            <button type="submit" class="btn btn-sm fw-bold btn-primary mt-5"
+                                                style="height: 35px;">Update</button>
                                         </div>
                                     </form>
                                 </div>
@@ -410,7 +412,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -481,7 +484,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -547,7 +551,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -613,7 +618,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -679,7 +685,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -833,7 +840,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -903,7 +911,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -969,7 +978,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1035,7 +1045,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1101,7 +1112,8 @@
                                                                                 class="menu-link px-3">View</a>
                                                                         </div>
                                                                         <div class="menu-item px-3">
-                                                                            <a data-bs-toggle="modal" data-bs-target="#user-edit"
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#user-edit"
                                                                                 class="menu-link px-3">Edit</a>
                                                                         </div>
                                                                         <!--end::Menu item-->
@@ -1658,7 +1670,8 @@
                                             <!--end::Card header-->
                                             <!--begin::Card body-->
                                             <div class="card-body pt-0">
-                                                <form id="update-categories" class="form" action="#">
+                                                <form id="update-categories" class="form"
+                                                    action="javascript:saveRankData();">
                                                     <div class="row mb-6 align-items-center">
                                                         <!--begin::Label-->
                                                         <label
@@ -1685,14 +1698,14 @@
                                                         <div class="col-lg-3">
                                                             <span
                                                                 class="col-form-label fw-semibold fs-6 rank-label">1</span>
-                                                            <input type="num" class="form-control rank-input d-none"
-                                                                placeholder="Rank" />
+                                                            <input type="number" class="form-control rank-input d-none"
+                                                                placeholder="Rank" required />
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <span
                                                                 class="col-form-label fw-semibold fs-6 rank-label">69,43</span>
-                                                            <input type="text" class="form-control rank-input d-none"
-                                                                placeholder="Total Score" />
+                                                            <input type="number" class="form-control rank-input d-none"
+                                                                placeholder="Total Score" required />
                                                         </div>
                                                         <!--end::Col-->
                                                     </div>
@@ -1705,14 +1718,14 @@
                                                         <div class="col-lg-3">
                                                             <span
                                                                 class="col-form-label fw-semibold fs-6 rank-label">2</span>
-                                                            <input type="num" class="form-control rank-input d-none"
-                                                                placeholder="Rank" />
+                                                            <input type="number" class="form-control rank-input d-none"
+                                                                placeholder="Rank" required />
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <span
                                                                 class="col-form-label fw-semibold fs-6 rank-label">63,23</span>
-                                                            <input type="text" class="form-control rank-input d-none"
-                                                                placeholder="Total Score" />
+                                                            <input type="number" class="form-control rank-input d-none"
+                                                                placeholder="Total Score" required />
                                                         </div>
                                                         <!--end::Col-->
                                                     </div>
@@ -1721,8 +1734,8 @@
                                                         class="card-footer d-flex justify-content-end py-6 px-9 d-none">
                                                         <a href="javascript:discardRankData();"
                                                             class="btn btn-light btn-active-light-primary me-2">Discard</a>
-                                                        <a href="javascript:saveRankData();" class="btn btn-primary">Save
-                                                            Changes</a>
+                                                        <button type="submit" class="btn btn-primary">Save
+                                                            Changes</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1772,7 +1785,7 @@
                                         <div class="fv-row">
                                             <input type="text" name="fname"
                                                 class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                placeholder="University name" value="Sunway University" />
+                                                placeholder="University name" value="Sunway University" required />
                                         </div>
                                     </div>
                                     <!--end::Row-->
@@ -1792,8 +1805,8 @@
                                 <div class="col-lg-8">
                                     <div class="row">
                                         <div class="fv-row">
-                                            <select name="country" aria-label="Select a Location" data-control="select2"
-                                                data-placeholder="Select a Location..."
+                                            <select name="country" required aria-label="Select a Location"
+                                                data-control="select2" data-placeholder="Select a Location..."
                                                 class="form-select form-select-solid form-select-lg fw-semibold">
                                                 <option value="">Select a Country...</option>
                                                 <option data-kt-flag="flags/afghanistan.svg" value="AF">Afghanistan
@@ -1824,7 +1837,8 @@
                                                 <option data-kt-flag="flags/bahrain.svg" value="BH">Bahrain</option>
                                                 <option data-kt-flag="flags/bangladesh.svg" value="BD">Bangladesh
                                                 </option>
-                                                <option data-kt-flag="flags/barbados.svg" value="BB">Barbados</option>
+                                                <option data-kt-flag="flags/barbados.svg" value="BB">Barbados
+                                                </option>
                                                 <option data-kt-flag="flags/belarus.svg" value="BY">Belarus</option>
                                                 <option data-kt-flag="flags/belgium.svg" value="BE">Belgium</option>
                                                 <option data-kt-flag="flags/belize.svg" value="BZ">Belize</option>
@@ -2192,7 +2206,7 @@
                                             <input type="url" name="fname"
                                                 class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
                                                 placeholder="University Website Link"
-                                                value="https://sunwayuniversity.edu.my/" />
+                                                value="https://sunwayuniversity.edu.my/" required />
                                         </div>
                                     </div>
                                     <!--end::Row-->
@@ -2209,7 +2223,7 @@
                                     <!--begin::Row-->
                                     <div class="row">
                                         <div class="fv-row">
-                                            <select name="institutional-recognition"
+                                            <select name="institutional-recognition" required
                                                 class="form-select form-select-solid form-select-lg fw-semibold">
                                                 <option value="Yes">Yes</option>
                                                 <option value="No">No</option>
@@ -2232,7 +2246,7 @@
                                         <div class="fv-row">
                                             <input type="email" name="fname"
                                                 class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                placeholder="Official web domain for faculty email" />
+                                                placeholder="Official web domain for faculty email" required />
                                         </div>
                                     </div>
                                     <!--end::Row-->
@@ -2251,7 +2265,7 @@
                                         <div class="fv-row">
                                             <input type="text" name="fname"
                                                 class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                placeholder="Institution name in other languages" />
+                                                placeholder="Institution name in other languages" required />
                                         </div>
                                     </div>
                                     <!--end::Row-->
@@ -2270,7 +2284,7 @@
                                         <div class="fv-row">
                                             <input type="url" name="fname"
                                                 class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-                                                placeholder="Google Scholar profile" />
+                                                placeholder="Google Scholar profile" required />
                                         </div>
                                     </div>
                                     <!--end::Row-->
@@ -2283,8 +2297,7 @@
 
                         <div class="d-flex justify-content-end mt-5">
                             <!--begin::Button-->
-                            <a href="{{ url('edit-institution') }}" id="kt_ecommerce_add_product_cancel"
-                                class="btn btn-light me-5">Cancel</a>
+                            <a href="#" data-bs-dismiss="modal" class="btn btn-light me-5">Cancel</a>
                             <!--end::Button-->
                             <!--begin::Button-->
                             <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
@@ -2313,45 +2326,58 @@
                     <form id="update-user-information" class="form" action="#">
                         <div class="d-flex flex-column gap-7 gap-lg-10">
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">First Name</label>
+                                <label class="col-lg-4 fw-semibold text-muted required">First Name</label>
                                 <div class="col-lg-8">
-                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First Name" />
+                                    <input type="text"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="First Name" required />
                                 </div>
                             </div>
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Last Name</label>
+                                <label class="col-lg-4 fw-semibold text-muted required">Last Name</label>
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Last Name" />
+                                    <input type="text"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="Last Name" required />
                                 </div>
                             </div>
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Job Title</label>
+                                <label class="col-lg-4 fw-semibold text-muted required">Job Title</label>
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Job Title" />
+                                    <input type="text"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="Job Title" required />
                                 </div>
                             </div>
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Email Address</label>
+                                <label class="col-lg-4 fw-semibold text-muted required">Email Address</label>
                                 <div class="col-lg-8">
-                                    <input type="email" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Email Address" />
+                                    <input type="email"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="Email Address" required />
                                 </div>
                             </div>
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Contact Number</label>
+                                <label class="col-lg-4 fw-semibold text-muted required">Contact Number</label>
                                 <div class="col-lg-8">
-                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Contact Number" />
+                                    <input type="text"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="Contact Number" required />
                                 </div>
                             </div>
                             <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Department/Office</label>
-                                <div class="col-lg-8">                                    
-                                    <input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Department/Office" />
+                                <label class="col-lg-4 fw-semibold text-muted required">Department/Office</label>
+                                <div class="col-lg-8">
+                                    <input type="text"
+                                        class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
+                                        placeholder="Department/Office" required />
                                 </div>
                             </div>
                         </div>
 
                         <div class="d-flex justify-content-end mt-5">
-                            <a href="{{ url('#') }}" data-bs-dismiss="modal" class="btn btn-light me-5">Cancel</a>                            
+                            <a href="{{ url('#') }}" data-bs-dismiss="modal"
+                                class="btn btn-light me-5">Cancel</a>
                             <button type="submit" class="btn btn-primary">
                                 <span class="indicator-label">Save Changes</span>
                                 <span class="indicator-progress">Please wait...
